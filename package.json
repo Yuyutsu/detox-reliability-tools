@@ -1,0 +1,39 @@
+{
+  "name": "detox-reliability-tools",
+  "version": "1.0.0",
+  "description": "Utility library to improve reliability, stability, and debugging of Detox end-to-end tests for React Native applications.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "detox",
+    "react-native",
+    "testing",
+    "e2e",
+    "reliability",
+    "flaky-tests"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "detox": ">=20.0.0"
+  },
+  "peerDependenciesMeta": {
+    "detox": {
+      "optional": true
+    }
+  }
+}
