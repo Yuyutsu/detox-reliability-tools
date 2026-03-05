@@ -1,0 +1,20 @@
+# Files and directories to exclude from the published npm package.
+# The "files" field in package.json already allowlists "dist/", so this file
+# acts as an extra guard and documents intent explicitly.
+
+# Source and tests (not needed by consumers)
+src/
+tests/
+
+# Config and tooling
+.github/
+.gitignore
+jest.config.js
+tsconfig.json
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+
+# Lock file (consumers use their own)
+package-lock.json
